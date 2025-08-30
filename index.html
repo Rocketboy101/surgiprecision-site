@@ -5,27 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SurgiPrecision - The Future of Surgical Suturing</title>
 
-  <!-- SEO Meta -->
+  <!-- SEO -->
   <meta name="description" content="SurgiPrecision is redefining efficiency in gynecological surgery with a semi-automatic suturing device that reduces procedural time, enhances surgeon control, and standardizes patient outcomes." />
   <meta name="keywords" content="surgical suturing, gynecological surgery, medical device, semi-automatic suturing, healthcare innovation" />
 
-  <!-- Open Graph -->
+  <!-- OG & Twitter -->
   <meta property="og:title" content="SurgiPrecision - The Future of Surgical Suturing" />
   <meta property="og:description" content="Our innovative semi-automatic suturing device reduces procedural time, enhances surgeon control, and standardizes patient outcomes." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://surgiprecision.com" />
   <meta property="og:image" content="https://surgiprecision.com/preview.jpg" />
-
-  <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="SurgiPrecision - The Future of Surgical Suturing" />
-  <meta name="twitter:description" content="Innovating surgical suturing for safer, faster, and more consistent patient outcomes." />
-  <meta name="twitter:image" content="https://surgiprecision.com/preview.jpg" />
 
   <!-- Fonts & Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -35,7 +28,6 @@
           colors: {
             'primary-blue': '#0A4D68',
             'secondary-green': '#16A34A',
-            'light-gray': '#F9FAFB',
             'dark-gray': '#1F2937',
           },
         },
@@ -43,162 +35,99 @@
     };
   </script>
 
-  <!-- Custom Animations -->
+  <!-- Animations -->
   <style>
-    .fade-in-up {
-      opacity: 0;
-      transform: translateY(30px);
-      transition: opacity 0.6s ease-out, transform 0.6s ease-out;
-    }
-    .fade-in-up.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .stat-card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
-                  0 8px 10px -6px rgb(0 0 0 / 0.1);
-    }
+    .fade-in-up { opacity:0; transform:translateY(30px); transition:.6s ease; }
+    .fade-in-up.visible { opacity:1; transform:translateY(0); }
   </style>
 </head>
 <body class="font-sans text-dark-gray antialiased">
 
   <!-- Navbar -->
-  <nav class="bg-white/80 backdrop-blur-lg shadow-sm fixed w-full z-50 transition-all duration-300" role="navigation" aria-label="Main Navigation">
-    <div class="container mx-auto px-6 flex justify-between items-center h-20">
-      <a href="#" class="text-primary-blue text-2xl font-bold flex items-center" aria-label="SurgiPrecision Home">
-        <svg class="w-8 h-8 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.01 12.01 0 002.92 13.5c-.381 2.274.015 4.58.98 6.474.908 1.864 2.404 3.13 4.195 3.564L12 22.845l4.805-1.307c1.79-.434 3.287-1.7 4.195-3.564.965-1.893 1.361-4.2.98-6.474a12.01 12.01 0 00-3.098-7.556z"/></svg>
-        SurgiPrecision
-      </a>
-      <div class="hidden md:flex space-x-8 items-center font-medium">
-        <a href="#opportunity" class="text-gray-600 hover:text-primary-blue">Opportunity</a>
-        <a href="#solution" class="text-gray-600 hover:text-primary-blue">Solution</a>
-        <a href="#team" class="text-gray-600 hover:text-primary-blue">Team</a>
-        <a href="#contact" class="text-gray-600 hover:text-primary-blue">Contact</a>
-        <a href="#contact" class="bg-secondary-green text-white px-6 py-2 rounded-full font-semibold hover:bg-green-700 transition-colors duration-300 shadow-sm">Request Investor Deck</a>
+  <nav class="fixed w-full bg-white/80 backdrop-blur-lg shadow-sm z-50">
+    <div class="container mx-auto flex justify-between items-center h-20 px-6">
+      <a href="#" class="text-primary-blue text-2xl font-bold flex items-center">SurgiPrecision</a>
+      <div class="hidden md:flex space-x-8">
+        <a href="#opportunity" class="hover:text-primary-blue">Opportunity</a>
+        <a href="#solution" class="hover:text-primary-blue">Solution</a>
+        <a href="#team" class="hover:text-primary-blue">Team</a>
+        <a href="#contact" class="hover:text-primary-blue">Contact</a>
+        <a href="#contact" class="bg-secondary-green text-white px-6 py-2 rounded-full hover:bg-green-700">Request Investor Deck</a>
       </div>
-      <button id="mobile-menu-button" class="md:hidden text-dark-gray focus:outline-none" aria-label="Toggle Menu">
-        <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
+      <button id="mobile-btn" class="md:hidden">☰</button>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden bg-white py-4 border-t">
-      <a href="#opportunity" class="block px-6 py-2 text-gray-700 hover:bg-light-gray">Opportunity</a>
-      <a href="#solution" class="block px-6 py-2 text-gray-700 hover:bg-light-gray">Solution</a>
-      <a href="#team" class="block px-6 py-2 text-gray-700 hover:bg-light-gray">Team</a>
-      <a href="#contact" class="block px-6 py-2 text-gray-700 hover:bg-light-gray">Contact</a>
-      <a href="#contact" class="block mx-6 my-2 bg-secondary-green text-white text-center px-6 py-3 rounded-full font-semibold">Request Investor Deck</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t px-6">
+      <a href="#opportunity" class="block py-2">Opportunity</a>
+      <a href="#solution" class="block py-2">Solution</a>
+      <a href="#team" class="block py-2">Team</a>
+      <a href="#contact" class="block py-2">Contact</a>
     </div>
   </nav>
 
   <!-- Hero -->
-  <header class="relative bg-light-gray min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-    <div class="absolute inset-0 bg-[url('https://www.toptal.com/designers/subtlepatterns/uploads/fancy-cushion.png')] opacity-50"></div>
-    <div class="relative z-10 text-center max-w-4xl mx-auto px-6">
-      <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight text-primary-blue">Redefining Efficiency in Gynecological Surgery.</h1>
-      <p class="text-xl md:text-2xl mb-10 text-gray-600 leading-relaxed">Our innovative semi-automatic suturing device is engineered to reduce procedural time, enhance surgeon control, and standardize patient outcomes.</p>
-      <a href="#opportunity" class="bg-secondary-green text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-green-700 transition-all duration-300 shadow-lg transform hover:scale-105">Discover the Opportunity</a>
+  <header class="relative min-h-screen flex items-center justify-center bg-light-gray pt-20">
+    <div class="text-center px-6 max-w-3xl">
+      <h1 class="text-5xl font-extrabold text-primary-blue mb-6">Redefining Efficiency in Gynecological Surgery.</h1>
+      <p class="text-xl text-gray-600 mb-8">Our semi-automatic suturing device reduces procedural time, enhances surgeon control, and standardizes outcomes.</p>
+      <a href="#opportunity" class="bg-secondary-green text-white px-8 py-3 rounded-full font-semibold hover:bg-green-700">Discover the Opportunity</a>
     </div>
   </header>
 
   <!-- Contact -->
-  <section id="contact" class="py-20 md:py-28 bg-gradient-to-br from-primary-blue to-blue-900 text-white">
+  <section id="contact" class="py-20 bg-gradient-to-br from-primary-blue to-blue-900 text-white">
     <div class="container mx-auto px-6 text-center">
-      <div class="fade-in-up">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Join Us in Shaping the Future of Surgery.</h2>
-        <p class="text-xl mb-12 max-w-3xl mx-auto opacity-90">We are engaging with strategic investors and clinical partners for our next phase of growth. For access to our investor deck and to schedule a confidential briefing, please connect with us.</p>
-        
-        <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-2xl text-dark-gray">
-          <form id="contact-form" action="https://formspree.io/f/mldwbjgn" method="POST" class="space-y-6">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div>
-                <input type="text" name="name" required placeholder="Full Name"
-                  class="block w-full px-4 py-3 border-gray-300 rounded-md focus:ring-primary-blue focus:border-primary-blue" />
-              </div>
-              <div>
-                <input type="text" name="institution" placeholder="Company / Institution"
-                  class="block w-full px-4 py-3 border-gray-300 rounded-md focus:ring-primary-blue focus:border-primary-blue" />
-              </div>
-            </div>
-            <div>
-              <input type="email" name="email" required placeholder="Business Email"
-                class="block w-full px-4 py-3 border-gray-300 rounded-md focus:ring-primary-blue focus:border-primary-blue" />
-            </div>
-            <div>
-              <select name="inquiry_type"
-                class="block w-full px-4 py-3 border-gray-300 rounded-md focus:ring-primary-blue focus:border-primary-blue text-gray-500">
-                <option value="Investor">I am an Investor</option>
-                <option value="Clinical Partner">I am a Clinical Partner</option>
-                <option value="Media Inquiry">Media Inquiry</option>
-                <option value="Other">Other</option>
-              </select>
-            </div>
-            <div>
-              <button type="submit"
-                class="w-full bg-secondary-green text-white px-6 py-3 rounded-full text-lg font-semibold hover:bg-green-700 transition-all duration-300 shadow-lg transform hover:scale-105">
-                Submit Request
-              </button>
-            </div>
-          </form>
-          <p id="form-status" class="mt-4 text-sm text-center hidden"></p>
-        </div>
+      <h2 class="text-3xl font-bold mb-6">Join Us in Shaping the Future of Surgery</h2>
+      <p class="mb-10 max-w-2xl mx-auto">We’re engaging with investors and clinical partners. Request our investor deck and schedule a briefing.</p>
+
+      <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg text-dark-gray">
+        <form id="contact-form" action="https://formspree.io/f/mldwbjgn" method="POST" class="space-y-6">
+          <input type="text" name="name" required placeholder="Full Name" class="w-full px-4 py-3 border rounded" />
+          <input type="email" name="email" required placeholder="Business Email" class="w-full px-4 py-3 border rounded" />
+          <input type="text" name="institution" placeholder="Company / Institution" class="w-full px-4 py-3 border rounded" />
+          <select name="inquiry_type" class="w-full px-4 py-3 border rounded">
+            <option value="Investor">Investor</option>
+            <option value="Clinical Partner">Clinical Partner</option>
+            <option value="Media">Media Inquiry</option>
+            <option value="Other">Other</option>
+          </select>
+          <button type="submit" class="w-full bg-secondary-green text-white px-6 py-3 rounded-full font-semibold hover:bg-green-700">Submit Request</button>
+        </form>
+        <p id="form-status" class="mt-4 text-sm text-center hidden"></p>
       </div>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-dark-gray text-white py-8">
-    <div class="container mx-auto px-6 text-center text-sm text-gray-400">
-      <p>&copy; 2025 SurgiPrecision, Inc. All rights reserved.</p>
-      <div class="mt-4 space-x-6">
-        <a href="#" class="hover:text-white">Privacy Policy</a>
-        <a href="#" class="hover:text-white">Terms of Use</a>
-      </div>
-    </div>
+  <footer class="bg-dark-gray text-white py-6 text-center text-sm">
+    <p>&copy; 2025 SurgiPrecision. All rights reserved.</p>
   </footer>
 
   <!-- Scripts -->
   <script>
-    // Mobile menu toggle
-    const mobileMenuButton = document.getElementById('mobile-menu-button');
-    const mobileMenu = document.getElementById('mobile-menu');
-    mobileMenuButton.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+    // Mobile toggle
+    document.getElementById("mobile-btn").addEventListener("click",()=> {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
     });
 
-    // Fade-in animation on scroll
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.fade-in-up').forEach(el => observer.observe(el));
+    // Intersection fade-in
+    const obs = new IntersectionObserver(entries=>{
+      entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add("visible"); });
+    }, {threshold:0.1});
+    document.querySelectorAll('.fade-in-up').forEach(el=>obs.observe(el));
 
-    // Formspree AJAX submission
-    const form = document.getElementById("contact-form");
-    const status = document.getElementById("form-status");
-
-    form.addEventListener("submit", async (e) => {
+    // Formspree AJAX
+    const form=document.getElementById("contact-form"),status=document.getElementById("form-status");
+    form.addEventListener("submit",async e=>{
       e.preventDefault();
-      const data = new FormData(form);
-      const res = await fetch(form.action, {
-        method: form.method,
-        body: data,
-        headers: { 'Accept': 'application/json' }
-      });
-
-      if (res.ok) {
-        status.textContent = "✅ Thank you! Your request has been submitted.";
-        status.classList.remove("hidden", "text-red-600");
-        status.classList.add("text-green-600");
+      let data=new FormData(form);
+      let res=await fetch(form.action,{method:form.method,body:data,headers:{Accept:"application/json"}});
+      if(res.ok){
+        status.textContent="✅ Thank you! Your request has been submitted.";
+        status.classList.remove("hidden"); status.classList.add("text-green-600");
         form.reset();
       } else {
-        status.textContent = "❌ Oops! Something went wrong. Please try again.";
-        status.classList.remove("hidden", "text-green-600");
-        status.classList.add("text-red-600");
+        status.textContent="❌ Oops! Something went wrong.";
+        status.classList.remove("hidden"); status.classList.add("text-red-600");
       }
     });
   </script>
