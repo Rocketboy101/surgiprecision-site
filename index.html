@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SurgiPrecision — Advancing Gynecological Surgery</title>
+  <meta name="description" content="SurgiPrecision delivers a semi-automatic suturing device specialized for gynecological surgeries—engineered for precision, efficiency, and consistent outcomes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --brand-text: #0f172a; /* slate-900 */
+      --brand-deep: #0f766e; /* teal-700 */
+      --brand-deeper: #115e59; /* teal-800 */
+      --brand-bright: #10b981; /* emerald-500 */
+      --brand-muted: #f1f5f9; /* slate-100 */
+    }
+    html, body { font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, 'Apple Color Emoji', 'Segoe UI Emoji'; }
+    /* Simple animated gradient mesh for hero */
+    .mesh {
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(13,148,136,0.15), transparent 60%),
+                  radial-gradient(900px 500px at 90% 20%, rgba(16,185,129,0.12), transparent 60%),
+                  radial-gradient(1000px 600px at 50% 100%, rgba(15,23,42,0.12), transparent 60%);
+    }
+    .glass { backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); }
+  </style>
+</head>
+<body class="text-slate-800 bg-white">
+  <!-- Navigation -->
+  <header id="top" class="fixed inset-x-0 top-0 z-50 bg-white/80 glass border-b border-slate-200">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#top" class="flex items-center gap-3 group" aria-label="SurgiPrecision home">
+          <div class="h-9 w-9 rounded-2xl bg-teal-700 flex items-center justify-center shadow-inner">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" class="h-5 w-5"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16M12 4v16"/></svg>
+          </div>
+          <span class="text-lg font-semibold tracking-tight text-slate-900">SurgiPrecision</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-8 text-sm">
+          <a href="#solution" class="text-slate-700 hover:text-slate-900">Solution</a>
+          <a href="#technology" class="text-slate-700 hover:text-slate-900">Technology</a>
+          <a href="#about" class="text-slate-700 hover:text-slate-900">About</a>
+          <a href="#contact" class="text-slate-700 hover:text-slate-900">Contact</a>
+          <a href="#contact" class="inline-flex items-center rounded-xl bg-emerald-500 px-4 py-2.5 font-medium text-white shadow hover:bg-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-200">Request Information</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl p-2 text-slate-700 hover:bg-slate-100 focus:outline-none" aria-label="Open menu">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" class="h-6 w-6"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-slate-200 bg-white">
+      <div class="space-y-1 px-4 py-3">
+        <a href="#solution" class="block rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100">Solution</a>
+        <a href="#technology" class="block rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100">Technology</a>
+        <a href="#about" class="block rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100">About</a>
+        <a href="#contact" class="block rounded-lg px-3 py-2 text-slate-700 hover:bg-slate-100">Contact</a>
+        <a href="#contact" class="block rounded-lg bg-emerald-500 px-3 py-2 font-medium text-white hover:bg-emerald-600">Request Information</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="relative pt-28 md:pt-32 pb-16 md:pb-24 mesh overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <!-- subtle grid overlay -->
+      <svg class="absolute inset-0 w-full h-full opacity-20" xmlns="http://www.w3.org/2000/svg"><defs><pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0v40" fill="none" stroke="#cbd5e1" stroke-width="0.5"/></pattern></defs><rect width="100%" height="100%" fill="url(#grid)"/></svg>
+    </div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid items-center gap-10 lg:grid-cols-2">
+        <div>
+          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight text-slate-900 leading-tight">
+            Advancing Gynecological Surgery with Unprecedented Precision and Control
+          </h1>
+          <p class="mt-5 text-base sm:text-lg text-slate-700 max-w-2xl">
+            SurgiPrecision empowers surgeons with a novel suturing device engineered for enhanced efficiency and consistent outcomes in delicate gynecological procedures.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#solution" class="inline-flex items-center rounded-xl bg-emerald-500 px-5 py-3 text-white font-semibold shadow hover:bg-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-200">Learn More</a>
+            <a href="#contact" class="inline-flex items-center rounded-xl border border-teal-700/20 bg-white px-5 py-3 font-semibold text-teal-800 hover:bg-teal-50">Request Information</a>
+          </div>
+        </div>
+        <div class="relative">
+          <!-- Abstract hero graphic -->
+          <div class="relative rounded-3xl p-1 bg-gradient-to-br from-teal-600 to-emerald-500 shadow-2xl">
+            <div class="rounded-3xl bg-white p-8 md:p-10">
+              <div class="relative aspect-[4/3] rounded-2xl bg-slate-50 overflow-hidden flex items-center justify-center">
+                <svg class="absolute inset-0 w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" aria-hidden="true">
+                  <defs>
+                    <linearGradient id="grad" x1="0" x2="1" y1="0" y2="1">
+                      <stop offset="0%" stop-color="#0d9488"/>
+                      <stop offset="100%" stop-color="#10b981"/>
+                    </linearGradient>
+                    <filter id="glow"><feGaussianBlur stdDeviation="8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+                  </defs>
+                  <!-- flowing bands -->
+                  <path d="M0 360 C140 280 240 420 380 340 C520 260 600 320 600 320 L600 450 L0 450 Z" fill="url(#grad)" opacity="0.25"/>
+                  <path d="M0 320 C130 260 240 360 380 300 C520 240 600 280 600 280 L600 450 L0 450 Z" fill="url(#grad)" opacity="0.35"/>
+                  <!-- abstract device silhouette -->
+                  <g filter="url(#glow)">
+                    <rect x="150" y="180" rx="20" ry="20" width="300" height="40" fill="#0f766e" opacity="0.85"/>
+                    <rect x="420" y="175" rx="6" width="70" height="50" fill="#0ea5a4" opacity="0.9"/>
+                    <circle cx="180" cy="200" r="10" fill="#14b8a6"/>
+                    <rect x="210" y="195" width="160" height="10" rx="5" fill="#14b8a6"/>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Challenge -->
+  <section class="py-16 md:py-24 bg-white" aria-labelledby="challenge-heading">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 id="challenge-heading" class="text-2xl sm:text-3xl font-bold text-slate-900">The Challenge</h2>
+        <p class="mt-4 text-slate-600">Gynecological suturing demands sustained focus, fine motor control, and consistent technique. Operating rooms thrive on speed and standardization—yet suturing can be time‑intensive and variable across cases and teams.</p>
+      </div>
+      <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        <!-- Time -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="h-12 w-12 rounded-xl bg-teal-50 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 6v6l4 2M12 3a9 9 0 100 18 9 9 0 000-18z"/></svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-slate-900">Time</h3>
+          <p class="mt-1 text-sm text-slate-600">Manual suturing can extend operative time, impacting schedule flow and resource utilization.</p>
+        </div>
+        <!-- Complexity -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="h-12 w-12 rounded-xl bg-teal-50 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 8l8-5 8 5v8l-8 5-8-5V8z"/></svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-slate-900">Complexity</h3>
+          <p class="mt-1 text-sm text-slate-600">High skill requirements and variable anatomy make repeatable performance challenging.</p>
+        </div>
+        <!-- Consistency -->
+        <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="h-12 w-12 rounded-xl bg-teal-50 flex items-center justify-center">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-teal-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l-7-7 2.5-2.5L12 14l7.5-7.5L22 9l-10 10z"/></svg>
+          </div>
+          <h3 class="mt-4 font-semibold text-slate-900">Consistency</h3>
+          <p class="mt-1 text-sm text-slate-600">Variations in technique can influence outcomes, training needs, and quality metrics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Solution -->
+  <section id="solution" class="py-16 md:py-24 bg-slate-50" aria-labelledby="solution-heading">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <h2 id="solution-heading" class="text-2xl sm:text-3xl font-bold text-slate-900">Our Solution</h2>
+          <p class="mt-4 text-slate-600">A semi-automatic suturing device purpose-built for gynecological procedures—designed to elevate control, streamline workflow, and support consistent, high‑quality outcomes.</p>
+          <div class="mt-6 grid gap-5 sm:grid-cols-2">
+            <div class="rounded-2xl bg-white border border-slate-200 p-5 shadow-sm">
+              <div class="h-10 w-10 rounded-lg bg-emerald-50 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 19l-7-7 2.5-2.5L12 14l7.5-7.5L22 9l-10 10z"/></svg>
+              </div>
+              <h3 class="mt-3 font-semibold text-slate-900">Enhanced Precision</h3>
+              <p class="mt-1 text-sm text-slate-600">Engineered for superior control and accuracy in every pass.</p>
+            </div>
+            <div class="rounded-2xl bg-white border border-slate-200 p-5 shadow-sm">
+              <div class="h-10 w-10 rounded-lg bg-emerald-50 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h12M9 6h12M9 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg>
+              </div>
+              <h3 class="mt-3 font-semibold text-slate-900">Improved Efficiency</h3>
+              <p class="mt-1 text-sm text-slate-600">Streamline critical steps of the surgical procedure, reducing valuable time in the operating room.</p>
+            </div>
+            <div class="rounded-2xl bg-white border border-slate-200 p-5 shadow-sm">
+              <div class="h-10 w-10 rounded-lg bg-emerald-50 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-emerald-600" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 13l4 4L19 7"/></svg>
+              </div>
+              <h3 class="mt-3 font-semibold text-slate-900">Consistent & Repeatable Outcomes</h3>
+              <p class="mt-1 text-sm text-slate-600">Minimize variability and support a high standard of care with every use.</p>
+            </div>
+          </div>
+          <div class="mt-8">
+            <a href="#technology" class="inline-flex items-center rounded-xl bg-teal-700 px-5 py-3 text-white font-semibold shadow hover:bg-teal-800 focus:outline-none focus:ring-4 focus:ring-teal-200">Explore the Technology</a>
+          </div>
+        </div>
+        <div>
+          <!-- Sleek abstract 3D-like render placeholder (vector based) -->
+          <div class="relative">
+            <div class="absolute -inset-1 rounded-[2rem] bg-gradient-to-tr from-emerald-500/40 to-teal-600/40 blur-2xl"></div>
+            <div class="relative rounded-[2rem] border border-slate-200 bg-white p-6 shadow-xl">
+              <div class="aspect-[4/3] w-full rounded-xl bg-slate-50 flex items-center justify-center overflow-hidden">
+                <svg viewBox="0 0 800 600" class="w-full h-full" xmlns="http://www.w3.org/2000/svg" aria-label="Abstract product visualization">
+                  <defs>
+                    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0%" stop-color="#0ea5a4"/>
+                      <stop offset="100%" stop-color="#10b981"/>
+                    </linearGradient>
+                    <radialGradient id="shade" cx="50%" cy="50%" r="50%">
+                      <stop offset="0%" stop-color="#000" stop-opacity="0.25"/>
+                      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+                    </radialGradient>
+                  </defs>
+                  <ellipse cx="400" cy="520" rx="260" ry="30" fill="url(#shade)"/>
+                  <g transform="translate(100,180)">
+                    <rect x="0" y="60" rx="28" ry="28" width="520" height="80" fill="url(#g1)"/>
+                    <rect x="480" y="50" rx="12" ry="12" width="120" height="100" fill="#14b8a6"/>
+                    <circle cx="30" cy="100" r="14" fill="#34d399"/>
+                    <rect x="70" y="92" rx="6" ry="6" width="300" height="16" fill="#99f6e4"/>
+                    <rect x="380" y="92" rx="6" ry="6" width="80" height="16" fill="#99f6e4"/>
+                  </g>
+                </svg>
+              </div>
+              <p class="mt-3 text-center text-sm text-slate-500">Concept visualization — not a photograph.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology -->
+  <section id="technology" class="py-16 md:py-24 bg-white" aria-labelledby="technology-heading">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-5">
+          <h2 id="technology-heading" class="text-2xl sm:text-3xl font-bold text-slate-900">Technology</h2>
+          <p class="mt-4 text-slate-600">Our proprietary semi‑automatic mechanism blends ergonomic design with intelligent feedback to provide intuitive control and confident, tactile response—supporting precise, repeatable suturing in gynecological workflows.</p>
+          <ul class="mt-6 space-y-3 text-sm text-slate-700">
+            <li class="flex gap-3"><span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">✓</span> Ergonomic form factor designed for surgeon comfort over long procedures.</li>
+            <li class="flex gap-3"><span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">✓</span> Semi‑automatic actuation that streamlines needle handling and suture placement.</li>
+            <li class="flex gap-3"><span class="mt-1 inline-flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-700">✓</span> Concept aligned with standard OR setups and sterilization workflows.</li>
+          </ul>
+        </div>
+        <div class="lg:col-span-7">
+          <!-- Simple flow diagram: Position -> Actuate -> Secure Suture -->
+          <div class="rounded-3xl border border-slate-200 bg-slate-50 p-8 shadow-sm">
+            <div class="grid sm:grid-cols-3 gap-8 items-center">
+              <div class="flex flex-col items-center text-center">
+                <div class="flex h-20 w-20 items-center justify-center rounded-2xl bg-white shadow border border-slate-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-teal-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 21l-8-8 8-8m0 0l8 8-8 8"/></svg>
+                </div>
+                <p class="mt-3 font-medium text-slate-900">Position</p>
+              </div>
+              <div class="flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-400 rotate-0 sm:rotate-0" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12h14m-4-4l4 4-4 4"/></svg>
+              </div>
+              <div class="flex flex-col items-center text-center">
+                <div class="flex h-20 w-20 items-center justify-center rounded-2xl bg-white shadow border border-slate-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-teal-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 5v14m-7-7h14"/></svg>
+                </div>
+                <p class="mt-3 font-medium text-slate-900">Actuate</p>
+              </div>
+            </div>
+            <div class="mt-8 grid sm:grid-cols-3 gap-8 items-center">
+              <div class="flex items-center justify-center sm:col-span-1 sm:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 12h14m-4-4l4 4-4 4"/></svg>
+              </div>
+              <div class="flex flex-col items-center text-center sm:col-span-1">
+                <div class="flex h-20 w-20 items-center justify-center rounded-2xl bg-white shadow border border-slate-200">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-9 w-9 text-teal-700" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 8l8-5 8 5v8l-8 5-8-5V8z"/></svg>
+                </div>
+                <p class="mt-3 font-medium text-slate-900">Secure Suture</p>
+              </div>
+              <div class="sm:col-span-2 text-center sm:text-left text-sm text-slate-600">
+                The concept emphasizes intuitive positioning, a single smooth actuation, and a reliable suture capture—supporting consistent results across teams.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-16 md:py-24 bg-slate-50" aria-labelledby="about-heading">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+        <div class="lg:col-span-6">
+          <h2 id="about-heading" class="text-2xl sm:text-3xl font-bold text-slate-900">Driven by a Passion for Surgical Innovation</h2>
+          <p class="mt-4 text-slate-600">SurgiPrecision was founded by a dedicated team of innovators from biomedical engineering and clinical backgrounds, united by a mission to solve critical unmet needs in surgery. Our work is shaped through ongoing collaboration with experienced gynecological surgeons and clinical advisors, ensuring that design decisions align with real-world challenges and workflows.</p>
+          <p class="mt-4 text-slate-600">We believe that fresh perspectives, relentless curiosity, and disciplined execution can unlock meaningful improvements in surgical care—advancing outcomes for clinicians and patients alike.</p>
+        </div>
+        <div class="lg:col-span-6">
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="font-semibold text-slate-900">Clinical Collaboration</h3>
+              <p class="mt-2 text-sm text-slate-600">Engaging advisors across gynecology to refine usability, ergonomics, and integration with OR protocols.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="font-semibold text-slate-900">Human‑Centered Design</h3>
+              <p class="mt-2 text-sm text-slate-600">Design decisions grounded in surgeon feedback, with an emphasis on comfort and control.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="font-semibold text-slate-900">Quality Mindset</h3>
+              <p class="mt-2 text-sm text-slate-600">A focus on reliability and consistency to support high standards of surgical care.</p>
+            </div>
+            <div class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+              <h3 class="font-semibold text-slate-900">Responsible Innovation</h3>
+              <p class="mt-2 text-sm text-slate-600">Committed to safety, ethics, and regulatory pathways appropriate to medical technologies.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & CTA -->
+  <section id="contact" class="py-16 md:py-24 bg-white" aria-labelledby="contact-heading">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-3xl text-center">
+        <h2 id="contact-heading" class="text-2xl sm:text-3xl font-bold text-slate-900">Partner with Us to Redefine Surgical Standards</h2>
+        <p class="mt-4 text-slate-600">We are seeking collaborations with clinical partners and investors to bring our technology to surgeons and patients. Connect with us to learn more about our mission.</p>
+      </div>
+      <div class="mt-10 grid lg:grid-cols-2 gap-8">
+        <form id="contactForm" class="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
+              <input id="name" name="name" type="text" required class="mt-1 w-full rounded-lg border-slate-300 focus:border-teal-700 focus:ring-teal-700" placeholder="Dr. Alex Sharma"/>
+            </div>
+            <div>
+              <label for="institution" class="block text-sm font-medium text-slate-700">Institution</label>
+              <input id="institution" name="institution" type="text" required class="mt-1 w-full rounded-lg border-slate-300 focus:border-teal-700 focus:ring-teal-700" placeholder="City Hospital"/>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+              <input id="email" name="email" type="email" required class="mt-1 w-full rounded-lg border-slate-300 focus:border-teal-700 focus:ring-teal-700" placeholder="you@institution.org"/>
+            </div>
+            <div class="sm:col-span-2">
+              <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+              <textarea id="message" name="message" rows="4" class="mt-1 w-full rounded-lg border-slate-300 focus:border-teal-700 focus:ring-teal-700" placeholder="Tell us about your interests or partnership goals..."></textarea>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center justify-between gap-3">
+            <button type="submit" class="inline-flex items-center rounded-xl bg-emerald-500 px-5 py-3 font-semibold text-white shadow hover:bg-emerald-600 focus:outline-none focus:ring-4 focus:ring-emerald-200">Submit</button>
+            <p class="text-sm text-slate-500" id="formNote">We respond within a few business days.</p>
+          </div>
+          <p id="formSuccess" class="mt-4 hidden rounded-xl bg-emerald-50 px-4 py-3 text-emerald-700">Thank you — your request has been received. We will be in touch.</p>
+        </form>
+        <div class="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+          <div class="space-y-4">
+            <div class="flex items-start gap-3">
+              <div class="mt-1 h-9 w-9 rounded-xl bg-teal-700/10 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-800" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 12a4 4 0 10-8 0 4 4 0 008 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 2v2m0 16v2m10-10h-2M4 12H2m15.54 6.46l-1.42-1.42M7.88 7.88 6.46 6.46m10.12 0 1.42-1.42M7.88 16.12 6.46 17.54"/></svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900">Collaborate</h3>
+                <p class="mt-1 text-sm text-slate-600">Clinical partners and advisors can help validate workflows and support evaluation studies.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="mt-1 h-9 w-9 rounded-xl bg-teal-700/10 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-800" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 1.79-3 4s1.343 4 3 4 3-1.79 3-4-1.343-4-3-4z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 12c0 6-9 10-9 10S3 18 3 12a9 9 0 1118 0z"/></svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900">Investor Relations</h3>
+                <p class="mt-1 text-sm text-slate-600">Reach our team for strategic discussions on scaling and market access.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-3">
+              <div class="mt-1 h-9 w-9 rounded-xl bg-teal-700/10 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-teal-800" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 8a2 2 0 01-2 2h-4l-3 3v-3H7a2 2 0 01-2-2V6a2 2 0 012-2h12a2 2 0 012 2v2z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5 15h14"/></svg>
+              </div>
+              <div>
+                <h3 class="font-semibold text-slate-900">Contact</h3>
+                <p class="mt-1 text-sm text-slate-600">Email: <a href="mailto:contact@surgiprecision.com" class="text-teal-800 hover:underline">contact@surgiprecision.com</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-slate-200 bg-white">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-3">
+        <div class="h-8 w-8 rounded-xl bg-teal-700 flex items-center justify-center">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="white" class="h-4 w-4"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16M12 4v16"/></svg>
+        </div>
+        <span class="text-sm font-semibold text-slate-900">SurgiPrecision</span>
+      </div>
+      <p class="text-xs text-slate-500">© <span id="year"></span> SurgiPrecision. All rights reserved.</p>
+      <div class="flex items-center gap-4 text-sm">
+        <a href="#solution" class="text-slate-600 hover:text-slate-900">Solution</a>
+        <a href="#technology" class="text-slate-600 hover:text-slate-900">Technology</a>
+        <a href="#about" class="text-slate-600 hover:text-slate-900">About</a>
+        <a href="#contact" class="text-slate-600 hover:text-slate-900">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn?.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Header shadow on scroll
+    const header = document.querySelector('header');
+    const onScroll = () => {
+      if (window.scrollY > 4) header.classList.add('shadow'); else header.classList.remove('shadow');
+    };
+    window.addEventListener('scroll', onScroll);
+    onScroll();
+
+    // Footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Smooth scrolling enhancement for in-page links (native scroll-smooth + offset fix)
+    const offset = 72; // header height approx
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const targetId = this.getAttribute('href');
+        if (targetId.length > 1) {
+          const target = document.querySelector(targetId);
+          if (target) {
+            e.preventDefault();
+            const top = target.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top, behavior: 'smooth' });
+            mobileMenu?.classList.add('hidden');
+          }
+        }
+      });
+    });
+
+    // Contact form handling (client-side)
+    const form = document.getElementById('contactForm');
+    const success = document.getElementById('formSuccess');
+    const note = document.getElementById('formNote');
+
+    form?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      // Basic email check
+      const emailOk = /\S+@\S+\.\S+/.test(data.email || '');
+      if (!emailOk) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+      // Simulate submission
+      success.classList.remove('hidden');
+      note.textContent = 'Form submitted.';
+      form.reset();
+    });
+  </script>
+</body>
+</html>
